@@ -1,9 +1,13 @@
-<header>
-  <nav class="round">
-    <ul>
-      <li><%= link_to "Home", '#' %></li>
-      <li><%= link_to "Help", '#' %></li>
-      <li><%= link_to "Sign in", '#' %></li>
-    </ul>
-  </nav>
+<header class="header">
+	<div id="navigator">
+		<%= image_tag("logo.png", :alt => "Sample App", :class => "left") %>
+  		<nav class="round">
+    		<ul id="primaryNavigation">
+      			<li class="current_page_item"><%= link_to "News", '#' %></li>
+      			<li><%= link_to "Examples", '#' %></li>
+      			<li><%= link_to "Links", '#' %></li>
+    		</ul>
+  		</nav>
+		<div class="clear">
+		</div>
 </header>
