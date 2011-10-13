@@ -1,4 +1,11 @@
 Html5::Application.routes.draw do
+  get "pages/home"
+
+  
+  resources :users
+  
+  match '' => 'pages#home'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
